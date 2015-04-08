@@ -3,6 +3,7 @@ from flask import (
     render_template,
 )
 from flask.ext.assets import Environment, Bundle
+from werkzeug.contrib.fixers import ProxyFix
 import settings
 
 app = Flask(__name__)
@@ -10,6 +11,7 @@ app = Flask(__name__)
 assets = Environment(app)
 app.debug = settings.DEBUG
 assets.url = app.static_url_path
+app.wsgi_app = ProxyFix(app.wsgi_app)
 scss = Bundle('scss/concise-noyse.scss', filters='pyscss', output='css/main.css')
 assets.register('scss_all', scss)
 
