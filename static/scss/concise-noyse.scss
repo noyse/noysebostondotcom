@@ -1,0 +1,49 @@
+/**
+ * # Concise.CSS
+ * http://github.com/ConciseCSS/concise.css
+ *
+ *
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ * This file is a reimplementation of concise.scss with NOYSE's custom
+ * Overrides so that the original files don't need tweaking, making upgrades
+ * a little easier.
+ */
+
+//------------------------------------
+//  IMPORTS
+//------------------------------------
+// Utility helpers
+@import "concise.css-2.1.0/scss/helpers/variables";
+@import "helpers/variables";  // custom override
+@import "concise.css-2.1.0/scss/helpers/functions";
+@import "concise.css-2.1.0/scss/helpers/mixins";
+@import "concise.css-2.1.0/scss/helpers/normalize";
+@import "concise.css-2.1.0/scss/helpers/clearfix";
+
+// Base styles
+@import "concise.css-2.1.0/scss/base/main";
+@import "concise.css-2.1.0/scss/base/vertical-rhythm";
+@import "concise.css-2.1.0/scss/base/selection";
+@import "concise.css-2.1.0/scss/base/type";
+@import "concise.css-2.1.0/scss/base/headings";
+
+// Layout styles
+@import "concise.css-2.1.0/scss/layout/container";
+@import "concise.css-2.1.0/scss/layout/grid";
+@import "concise.css-2.1.0/scss/layout/lists";
+@import "concise.css-2.1.0/scss/layout/forms";
+@import "concise.css-2.1.0/scss/layout/tables";
+
+// Component styles
+@import "concise.css-2.1.0/scss/components/colors";
+@import "concise.css-2.1.0/scss/components/buttons";
+@import "concise.css-2.1.0/scss/components/dropdowns";
+@import "concise.css-2.1.0/scss/components/navigation";
+
+// Helpers
+@import "concise.css-2.1.0/scss/helpers/helpers";
+@import "concise.css-2.1.0/scss/helpers/conditional";
+@import "concise.css-2.1.0/scss/base/print";

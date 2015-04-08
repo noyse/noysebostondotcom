@@ -22,6 +22,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+*.DS_Store
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -55,3 +56,13 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# pyCharm
+.idea
+
+# Settings files
+localsettings.py
+
+# Flask stuff
+static/.webassets-cache/
+static/css/
